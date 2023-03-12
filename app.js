@@ -3,5 +3,3 @@ const express = require('express');
 const app = express();
 
 app.listen(3000);
-
-// require('express')().listen(3000);
