@@ -1,11 +1,29 @@
+const User = require('../models/user.model');
+
 function getSignup(req, res) {
   res.render('customer/auth/signup');
 }
 
-function signup(req, res) {}
+async function signup(req, res) {
+  const user = new User(
+    req.body.email,
+    req.body.password,
+    req.body.fullname,
+    req.body.street,
+    req.body.postal,
+    req.body.city
+  );
+
+  await user.signup();
+
+  res.redirect('/login');
+  // Controller functions that are triggered by incoming post requests,
+  // we redirect instead of rendering as a response
+  // so the user can't accidentally resubmitthe post route data.
+}
 
 function getLogin(req, res) {
-  //...
+  res.render('customer/auth/login');
 }
 
 module.exports = {

@@ -11,6 +11,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views')); // path views is folder contains ejs
 
 app.use(express.static('public')); // public folder serves staticly
+app.use(express.urlencoded({ extended: false })); // for handling data attached to request
 
 app.use(authRoutes);
 
