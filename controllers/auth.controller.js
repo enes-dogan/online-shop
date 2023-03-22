@@ -17,6 +17,7 @@ function getSignup(req, res) {
       city: '',
     };
   }
+
   res.render('customer/auth/signup', { inputData: sessionData });
 }
 
@@ -30,6 +31,7 @@ async function signup(req, res, next) {
     postal: req.body.postal,
     city: req.body.city,
   };
+
   if (
     !validation.userDetailsAreValid(
       req.body.email,
@@ -64,13 +66,13 @@ async function signup(req, res, next) {
   );
 
   try {
-    const existsAlready = await user.existAlready();
+    const existsAlready = await user.existsAlready();
 
     if (existsAlready) {
       sessionFlash.flashDataToSession(
         req,
         {
-          errorMessage: 'User exist already.',
+          errorMessage: 'User exists already.',
           ...enteredData,
         },
         function () {
@@ -93,7 +95,16 @@ async function signup(req, res, next) {
 }
 
 function getLogin(req, res) {
-  res.render('customer/auth/login');
+  let sessionData = sessionFlash.getSessionData(req);
+
+  if (!sessionData) {
+    sessionData = {
+      email: '',
+      password: '',
+    };
+  }
+
+  res.render('customer/auth/login', { inputData: sessionData });
 }
 
 async function login(req, res, next) {
@@ -111,6 +122,7 @@ async function login(req, res, next) {
     email: user.email,
     password: user.password,
   };
+
   if (!existingUser) {
     sessionFlash.flashDataToSession(req, sessionErrorData, function () {
       res.redirect('/login');
