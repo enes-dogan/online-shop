@@ -73,9 +73,13 @@ main {
   height: calc(100vh - 5rem);
   width: 100%;
   background-color: var(--color-gray-700);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
+}
+/* if has a mobile menu id + open class only then stlyes will affect */
+#mobile-menu.open { /*no whitespace between id & class names*/
+  display: flex;
 }
 
 #mobile-menu nav {
