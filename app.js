@@ -20,6 +20,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 // path views is folder contains ejs
 app.use(express.static('public')); // public folder serves staticly
+app.use('/products/assets', express.static('product-data'));// product-data folder serves staticly
 app.use(express.urlencoded({ extended: false }));
 // for handling data attached to request
 const sessionConfig = createSessionConfig();
@@ -33,7 +34,7 @@ app.use(checkAuthStatusMiddleware);
 app.use(baseRoutes);
 app.use(authRoutes);
 app.use(productsRoutes);
-app.use('/admin', adminRoutes);
+app.use('/admin', adminRoutes); // only urls start with /admin will handled by this middleware
 
 
 app.use(errorHandlerMiddleware);
