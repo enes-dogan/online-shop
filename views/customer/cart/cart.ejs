@@ -8,9 +8,9 @@
     <h1>Your Cart</h1>
     <ul id="cart-items">
       <% for (const cartItem of locals.cart.items) { %>
-      <li>
-        <%- include('includes/cart-item', { item: cartItem }) %>
-      </li>
+        <li>
+          <%- include('includes/cart-item', { item: cartItem }) %>
+        </li>
       <% } %>
     </ul>
     <div id="cart-total">

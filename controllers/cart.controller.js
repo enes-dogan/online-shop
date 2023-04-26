@@ -24,7 +24,7 @@ async function addCartItem(req, res, next) {
   });
 }
 
-function updateCartItem(req, res, next) {
+function updateCartItem(req, res) {
   const cart = res.locals.cart;
 
   const updatedItemData = cart.updateItem(
@@ -38,7 +38,7 @@ function updateCartItem(req, res, next) {
     message: 'Item updated.',
     updatedCartData: {
       newTotalQuantity: cart.totalQuantity,
-      newTotalPrice: cart.newTotalPrice,
+      newTotalPrice: cart.totalPrice,
       updatedItemPrice: updatedItemData.updatedItemPrice,
     },
   });
