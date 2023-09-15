@@ -1,66 +1,50 @@
 [
   {
-    _id: ObjectId("6437d40c251557de3bd8b96a"),
     title: 'The Maverick Mechanical Watch',
     summary: 'This bold and rugged watch is built to withstand any adventure.',
     price: 1199.99,
     description: "With a stainless steel case and a scratch-resistant sapphire crystal, the Maverick is tough enough for the most demanding environments. The automatic movement ensures accurate timekeeping, while the luminous hands and markers make it easy to read in low light conditions. Whether you're exploring the great outdoors or navigating the urban jungle, the Maverick is the perfect companion.",
-    image: 'DALLÂ·E 2023-04-13 12.48.47 - mechanical watch with a green accents photo realistic style.png'
   },
   {
-    _id: ObjectId("6437d43a251557de3bd8b96b"),
     title: 'The Classic Mechanical Watch',
     summary: 'This timeless timepiece is a true classic.',
     price: 2499.99,
     description: 'The stainless steel case and leather strap give it an elegant and refined look that will never go out of style. The automatic movement ensures reliable and accurate timekeeping, while the sapphire crystal provides superior scratch resistance. With its understated design and exceptional craftsmanship, the Classic is the perfect choice for anyone who appreciates the finer things in life.',
-    image: 'DALLÂ·E 2023-04-13 13.04.23 - mechanical watch with a photo realistic style.png'
   },
   {
-    _id: ObjectId("6437d472251557de3bd8b96c"),
     title: 'The Aviator Mechanical Watch',
     summary: 'Inspired by the instruments of a cockpit.',
     price: 849.99,
     description: "The Aviator is a watch for those who take to the skies. With a large, easy-to-read dial and a rugged leather strap, this watch is both functional and stylish. The automatic movement keeps precise time, while the sapphire crystal provides excellent durability. Whether you're a seasoned pilot or just a fan of aviation, the Aviator is sure to take your breath away.",
-    image: 'DALLÂ·E 2023-04-13 12.47.46 - mechanical watch with a photo realistic style.png'
   },
   {
-    _id: ObjectId("6437d4b0251557de3bd8b96d"),
     title: "The Diver's Mechanical Watch",
     summary: 'Designed for the depths of the ocean.',
     price: 749.99,
     description: "The Diver's watch is a reliable and rugged timepiece. With a durable stainless steel case and a unidirectional rotating bezel, this watch can withstand the rigors of deep-sea exploration. The automatic movement ensures accurate timekeeping, while the luminous hands and markers make it easy to read in any light. The screw-down crown and case back provide excellent water resistance, making the Diver's watch the perfect companion for any diver.",
-    image: 'DALLÂ·E 2023-04-13 12.47.31 - mechanical watch with a photo realistic style.png'
   },
   {
-    _id: ObjectId("644452ddca93add7b600673e"),
     title: 'The Royal Tourbillon',
     summary: 'A Timeless Masterpiece of Luxury and Elegance',
     price: 3499.99,
     description: 'The Royal Tourbillon is a wristwatch that exudes luxury and sophistication. This timepiece is expertly crafted with the finest materials and is designed to impress even the most discerning of watch collectors. The watch features a stunning tourbillon mechanism, which is a complex and intricate system that enhances the accuracy of timekeeping. The case is made of solid 18k white gold, and the bezel is encrusted with a sparkling array of diamonds, adding a touch of glamour to this already breathtaking watch. The dial is intricately designed with hand-carved details, and the watch hands are crafted from blue steel, adding a pop of color to the overall design. The strap is made of the finest alligator leather, adding to the luxurious feel of the watch. The Royal Tourbillon is the perfect timepiece for anyone who appreciates the finer things in life and wants to make a statement with their style',
-    image: 'DALLÂ·E 2023-04-23 00.31.23 - richard mille style watch realistic product shot.png'
   },
   {
-    _id: ObjectId("64446812940096ce1dbf65a5"),
     title: 'The Heritage Chronograph',
     summary: 'A Classic and Timeless Timepiece',
     price: 1999.99,
     description: 'The Heritage Chronograph is a watch that embodies classic elegance and timeless style. This watch is crafted with the utmost attention to detail, using only the finest materials available. The case is made of polished stainless steel and features a scratch-resistant sapphire crystal, ensuring durability and longevity. The dial is designed with a clean and minimalist aesthetic, featuring elegant numerals and sub-dials that display the chronograph function. The watch hands are crafted from polished steel, adding a touch of sophistication to the overall design. The strap is made of supple and durable leather, ensuring both comfort and style. The Heritage Chronograph is the perfect watch for anyone who appreciates understated elegance and classic design. It is a timepiece that will never go out of style and will be treasured for generations to come.',
-    image: 'DALLÂ·E 2023-04-23 00.32.07 - richard mille style watch realistic product shot.png'
   },
   {
-    _id: ObjectId("644919ccca0be40f35b58150"),
     title: 'The Athletic Chronograph',
     summary: 'The Athletic Chronograph is the perfect watch for athletes.',
     price: 5699.99,
     description: 'With its sleek stainless steel case and durable rubber strap, this watch is designed for performance and endurance. The chronograph function allows you to keep track of your workouts and activities with precision, while the luminous hands and markers make it easy to read in any lighting. The Athletic Chronograph is the perfect combination of style and functionality.',
-    image: 'DALLÂ·E 2023-04-23 00.31.19 - richard mille style watch realistic product shot.png'
   },
   {
-    _id: ObjectId("64491a35ca0be40f35b58151"),
     title: 'The Modern Executive Watch',
     summary: 'The Modern Executive Watch is the perfect timepiece for the business executive. ',
     price: 21099.99,
     description: 'With its sleek and minimalist design, this watch exudes sophistication and style. The stainless steel case and sapphire crystal ensure durability and longevity, while the automatic movement provides accurate timekeeping. The leather strap adds a touch of elegance, making the Modern Executive Watch the ideal watch for anyone who wants to make a statement with their style.',
-    image: 'DALLÂ·E 2023-04-23 00.31.11 - richard mille style watch realistic product shot.png'
-  }
+  },
 ]
