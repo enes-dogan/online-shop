@@ -9,7 +9,7 @@ npm start
 ```
 ## Usage
 
-After installation, open you have to create a new user and then insert a `isAdmin: true` field in the database to be able to add products to the store.
+After installation, you have to create a new user and then insert a `isAdmin: true` field in the database to be able to add products to the store.
 ```bash
 db.users.updateOne( { _id: ObjectId("THE ID OF CREATED USER") }, { $set: { isAdmin: true } });
 ```
